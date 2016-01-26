@@ -14,7 +14,7 @@ from functools import wraps
 try:
     from urlparse import urljoin
 except:
-    from urllib.urlparse import urljoin
+    from urllib.parse import urljoin
 from flask import request, session, redirect, current_app
 from werkzeug import parse_options_header
 from rauth.service import OAuth2Service, OAuth1Service, OflyService, Response, parse_utf8_qsl
